@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Có em là điều tuyệt vời nhất",
+        "songImg": "img.jpg",
+        "audioSource": "song1.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Bông hoa đẹp nhất",
+        "songImg": "img1.jpg",
+        "audioSource": "song2.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "14 ngày nhớ em",
+        "songImg": "img2.jpg",
+        "audioSource": "song3.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Ex’s Hate Me (Part 2)",
+        "songImg": "img3.jpg",
+        "audioSource": "song4.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Hai phút hơn",
+        "songImg": "img4.jpg",
+        "audioSource": "song5.mp3"
+    }
+]
+

@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    outline: none;
+    border: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(img.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card__music {
+    width: 1300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    background: #000;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.card__music--image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card__music--disc img {
+    width: 370px;
+    object-fit: cover;
+    position: absolute;
+    left: 19%;
+    top: 12.5%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: disc 6s linear infinite;
+}
+
+
+@keyframes disc {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.card__music--social {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.card__music--social i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card__music--song {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.card__music--song .title {
+    font-size: 45px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.card__music--song .song-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.card__music--song .song-player .timeline {
+    width: 450px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.card__music--song .song-player .time-player {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card__music--song .song-player .control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__music--song .song-player .control i {
+    padding: 5px 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.card__music--song .song-player .control #pauseButton {
+    position: absolute;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card__music--song .song-player .volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__music--song .song-player .volume i {
+    padding: 8px;
+}
+
+.card__music--song .song-player .volume input {
+    width: 250px;
+}
+
+.card__music--song .song-player .timeline,
+.card__music--song .song-player .volume input {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card__music--song .song-player .timeline::-webkit-slider-thumb,
+.card__music--song .song-player .volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card__music--social i:hover,
+.card__music--song .song-player .control i:hover {
+    color: aquamarine;
+    transition: 0.3s;
+}
+
+@keyframes img-scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.01);
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .card__music {
+        height: auto;
+    }
+
+    .card__music--image img {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+        animation: img-scale 0.3s ease infinite;
+    }
+
+    .card__music {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card__music--disc img {
+        width: 70px;
+        height: 70px;
+        z-index: 1;
+        top: 35%;
+        right: 46%;
+        left: unset;
+    }
+
+    .card__music--social i {
+        font-size: 30px;
+    }
+
+    .card__music--song {
+        margin-left: 0;
+    }
+
+    .card__music--song .title {
+        font-size: 40px;
+    }
+
+    .card__music--song .song-name {
+        font-size: 25px;
+    }
+
+    .card__music--song .song-player .timeline {
+        width: 700px;
+        margin-top: 40px;
+    }
+
+    .card__music--song .song-player {
+        font-size: 25px;
+    }
+
+    .card__music--song .song-player .control i {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .card__music--song .song-player .volume input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .card__music--disc img {
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+        top: 36%;
+        right: 46%;
+        left: unset;
+    }
+
+    .card__music--song .title {
+        font-size: 35px;
+    }
+
+    .card__music--song .song-name {
+        font-size: 22px;
+    }
+
+    .card__music--song .song-player .timeline {
+        width: 600px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card__music--song .song-player .timeline {
+        width: 500px;
+        margin-top: 40px;
+    }
+
+    .card__music--song .song-player .control i {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .card__music--song .song-player .volume input {
+        width: 300px;
+    }
+
+    .card__music--song .song-player .timeline {
+        width: 450px;
+        margin-top: 40px;
+    }
+
+    .card__music--song .song-player .control i {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+
+    .card__music--disc img {
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        top: 44.5%;
+        right: 44%;
+        left: unset;
+    }
+
+    .card__music--image img {
+        width: 350px;
+        height: 350px;
+        margin-top: 40px;
+    }
+
+    .card__music--social i {
+        font-size: 25px;
+    }
+
+    .card__music--song .title {
+        font-size: 30px;
+    }
+
+    .card__music--song .song-name {
+        font-size: 20px;
+    }
+
+    .card__music--song .song-player .timeline {
+        width: 450px;
+        margin-top: 40px;
+    }
+
+    .card__music--song .song-player {
+        font-size: 20px;
+    }
+
+    .card__music--song .song-player .control i {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .card__music--song .song-player .volume input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .card__music--disc img {
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        top: 41%;
+        right: 44%;
+        left: unset;
+    }
+
+    .card__music {
+        padding: 0;
+    }
+
+    .card__music--image img {
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .card__music--social i {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    .card__music--song .title {
+        font-size: 20px;
+        margin-top: -50px;
+    }
+
+    .card__music--song .song-name {
+        font-size: 12px;
+    }
+
+    .card__music--song .song-player .timeline {
+        width: 240px;
+        margin-top: 20px;
+    }
+
+    .card__music--song .song-player {
+        font-size: 15px;
+    }
+
+    .card__music--song .song-player .control i {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .card__music--song .song-player .volume input {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .card__music--disc img {
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        top: 41%;
+        right: 41%;
+        left: unset;
+    }
+}

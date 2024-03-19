@@ -1,10 +1,13 @@
 [
+    
     {
         "title": "Lofi chill tâm trạng",
-        "songName": "Có em là điều tuyệt vời nhất",
-        "songImg": "img.jpg",
-        "audioSource": "song1.mp3"
+        "songName": "Sau lời từ khước",
+        "songImg": "img7.jpg",
+        "audioSource": "song7.mp3"
     },
+    
+    
     {
         "title": "Lofi chill tâm trạng",
         "songName": "Bông hoa đẹp nhất",
@@ -28,6 +31,24 @@
         "songName": "Hai phút hơn",
         "songImg": "img4.jpg",
         "audioSource": "song5.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Có em là điều tuyệt vời nhất",
+        "songImg": "img.jpg",
+        "audioSource": "song6.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Sài gòn hôm nay mưa",
+        "songImg": "img8.jpg",
+        "audioSource": "song8.mp3"
+    },
+    {
+        "title": "Lofi chill tâm trạng",
+        "songName": "Lời hẹn ước từ hư vô",
+        "songImg": "img9.jpg",
+        "audioSource": "song9.mp3"
     }
 ]
 
